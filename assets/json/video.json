@@ -1,0 +1,9 @@
+{
+  "VideoView": {
+    "Src": "",
+    "ContainerColor": "#808080",
+    "BackgroundColor": "#808080",
+    "Margin": 8.0,
+    "Padding": 5.0
+  }
+}

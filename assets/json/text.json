@@ -1,0 +1,13 @@
+{
+  "TextView": {
+    "FontSize": 16,
+    "FontColor": "#000000",
+    "FontWeight": "normal",
+    "FontType": "",
+    "NumberOfLines": 4,
+    "BackgroundColor": "#808080",
+    "Margin": 8.0,
+    "Padding": 5.0,
+    "Text": "My Button"
+  }
+}
