@@ -2,8 +2,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:new_app/dynamic_image_slider/SliderModel.dart';
 import 'package:new_app/dynamic_image_slider/widget_image.dart';
-import 'package:new_app/dynamic_image_slider/d_image_with_text.dart';
-import 'package:new_app/dynamic_image_slider/d_image_with_text_button.dart';
+import 'package:new_app/dynamic_image_slider/widget_image_with_text.dart';
+import 'package:new_app/dynamic_image_slider/widget_image_with_text_button.dart';
 import 'package:new_app/helper/util.dart';
 
 class CustomSlider extends StatefulWidget {

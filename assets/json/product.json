@@ -1,0 +1,38 @@
+{
+  "Category": {
+    "ImageBackgroundColor": "#c1c1c1",
+    "TextColor": "#bcbcbc",
+    "FontSize": 20.0,
+    "ImageRadius": 10.0,
+    "ViewBackgroundColor":"#bcbcbc",
+    "AllVisible": true,
+    "LinkType": "Product",
+    
+    "Items": [
+      {
+        "ImageLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "LinkHandle": "Image",
+        "LinkId": 1,
+        "Price" : 99.0
+      },
+      {
+        "ImageLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "LinkHandle": "Image",
+        "LinkId": 2,
+        "Price" : 299.0
+      },
+      {
+        "ImageLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "LinkHandle": "Image",
+        "LinkId": 3,
+        "Price" : 399.0
+      },
+      {
+        "ImageLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "LinkHandle": "Image",
+        "LinkId": 4,
+        "Price" : 699.0
+      }
+    ]
+  }
+}

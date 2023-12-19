@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_app/product_category/widget_product_view.dart';
-import 'package:new_app/widget_popular_category.dart';
+import 'package:new_app/product_category/widget_popular_category.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

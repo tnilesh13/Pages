@@ -32,7 +32,7 @@ class _WidgetImageSliderState extends State<WidgetImageSlider> {
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           Map<String, dynamic> jsonData = json.decode(snapshot.data.toString());
-          Sliders newSlider = Sliders.fromJson(jsonData["Sliders"]);
+          Sliders newSlider = Sliders.fromJson(jsonData["Sliders"]);  
           
           return CustomSlider(newSlider,(item) {
             

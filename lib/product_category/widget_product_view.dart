@@ -10,7 +10,7 @@ class WidgetProductView extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            color: Colors.black,
+            // color: Colors.black,
             margin: const EdgeInsets.fromLTRB(15, 10, 15, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -49,7 +49,7 @@ Widget ProductListWidget() {
   // Widget listItemProduct(context, List<Product> list)
   // {
   return Container(
-      padding: EdgeInsets.fromLTRB(12, 10, 12, 0),
+      padding: EdgeInsets.fromLTRB(12, 0, 0, 12),
       height: 195,
       child: ListView.builder(
           physics: ClampingScrollPhysics(),
