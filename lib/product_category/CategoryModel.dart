@@ -21,8 +21,8 @@ class CategoryModel {
 class Category {
   String? imageBackgroundColor;
   String? textColor;
-  int? fontSize;
-  int? imageRadius;
+  double? fontSize;
+  double? imageRadius;
   String? viewBackgroundColor;
   bool? allVisible;
   String? linkType;
@@ -74,13 +74,15 @@ class Items {
   String? imageLink;
   String? linkHandle;
   int? linkId;
+  String? titleText;
 
-  Items({this.imageLink, this.linkHandle, this.linkId});
+  Items({this.imageLink, this.linkHandle, this.linkId, this.titleText});
 
   Items.fromJson(Map<String, dynamic> json) {
     imageLink = json['ImageLink'];
     linkHandle = json['LinkHandle'];
     linkId = json['LinkId'];
+    titleText = json['TitleText'];
   }
 
   Map<String, dynamic> toJson() {
@@ -88,6 +90,7 @@ class Items {
     data['ImageLink'] = this.imageLink;
     data['LinkHandle'] = this.linkHandle;
     data['LinkId'] = this.linkId;
+    data['TitleText'] = this.titleText;
     return data;
   }
 }

@@ -1,7 +1,7 @@
 {
-  "Category": {
+  "Product": {
     "ImageBackgroundColor": "#c1c1c1",
-    "TextColor": "#bcbcbc",
+    "TextColor": "#000000",
     "FontSize": 20.0,
     "ImageRadius": 10.0,
     "ViewBackgroundColor":"#bcbcbc",
@@ -13,25 +13,29 @@
         "ImageLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "LinkHandle": "Image",
         "LinkId": 1,
-        "Price" : 99.0
+        "Price" : 99.0,
+        "TitleText" : "T-Shirt" 
       },
       {
-        "ImageLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "ImageLink": "https://images.unsplash.com/photo-1624670760266-0ddc7639b3a4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-a&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "LinkHandle": "Image",
         "LinkId": 2,
-        "Price" : 299.0
+        "Price" : 299.0,
+        "TitleText" : "Shirt" 
       },
       {
-        "ImageLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "ImageLink": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "LinkHandle": "Image",
         "LinkId": 3,
-        "Price" : 399.0
+        "Price" : 399.0,
+        "TitleText" : "Hoodie" 
       },
       {
-        "ImageLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "ImageLink": "https://images.unsplash.com/photo-1585801442122-96dd773c76fa?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "LinkHandle": "Image",
         "LinkId": 4,
-        "Price" : 699.0
+        "Price" : 699.0,
+        "TitleText" : "Jeans" 
       }
     ]
   }

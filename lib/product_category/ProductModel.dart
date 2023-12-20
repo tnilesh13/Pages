@@ -1,34 +1,34 @@
 class ProductModel {
-  Category? category;
+  Product? product;
 
-  ProductModel({this.category});
+  ProductModel({this.product});
 
   ProductModel.fromJson(Map<String, dynamic> json) {
-    category = json['Category'] != null
-        ? new Category.fromJson(json['Category'])
+    product = json['Product'] != null
+        ? new Product.fromJson(json['Product'])
         : null;
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    if (this.category != null) {
-      data['Category'] = this.category!.toJson();
+    if (this.product != null) {
+      data['Product'] = this.product!.toJson();
     }
     return data;
   }
 }
 
-class Category {
+class Product {
   String? imageBackgroundColor;
   String? textColor;
-  int? fontSize;
-  int? imageRadius;
+  double? fontSize;
+  double? imageRadius;
   String? viewBackgroundColor;
   bool? allVisible;
   String? linkType;
   List<Items>? items;
 
-  Category(
+  Product(
       {this.imageBackgroundColor,
       this.textColor,
       this.fontSize,
@@ -38,7 +38,7 @@ class Category {
       this.linkType,
       this.items});
 
-  Category.fromJson(Map<String, dynamic> json) {
+  Product.fromJson(Map<String, dynamic> json) {
     imageBackgroundColor = json['ImageBackgroundColor'];
     textColor = json['TextColor'];
     fontSize = json['FontSize'];
@@ -74,7 +74,8 @@ class Items {
   String? imageLink;
   String? linkHandle;
   int? linkId;
-  int? price;
+  double? price;
+  String? titleText;
 
   Items({this.imageLink, this.linkHandle, this.linkId, this.price});
 
@@ -83,6 +84,7 @@ class Items {
     linkHandle = json['LinkHandle'];
     linkId = json['LinkId'];
     price = json['Price'];
+    titleText = json['TitleText'];
   }
 
   Map<String, dynamic> toJson() {
@@ -91,6 +93,7 @@ class Items {
     data['LinkHandle'] = this.linkHandle;
     data['LinkId'] = this.linkId;
     data['Price'] = this.price;
+    data['TitleText'] = this.titleText;
     return data;
   }
 }

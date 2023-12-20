@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_app/helper/util.dart';
-import 'package:new_app/some_screens/read_json.dart';
+import 'package:new_app/helper/read_json.dart';
 
 class WidgetImage1 extends StatefulWidget {
   const WidgetImage1({super.key});
