@@ -17,13 +17,15 @@ class WidgetPopulorProduct extends StatelessWidget {
                 json.decode(snapshot.data.toString());
             Product product = Product.fromJson(jsonData["Product"]);
 
+    Color containerBackgroundColor =
+        Util.getColorFromHex(product.containerBackgroundColor!);
+        
             return Container(
-              color: Colors.grey,
-              child: Column(
+                    color: containerBackgroundColor,
+               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    // color: Colors.black,
                     margin: const EdgeInsets.fromLTRB(15, 10, 15, 0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -37,7 +39,7 @@ class WidgetPopulorProduct extends StatelessWidget {
                             ? Text(
                                 "View All",
                                 style: TextStyle(
-                                    fontSize: 18, color: Colors.brown.shade900),
+                                    fontSize: 14, color: Colors.brown.shade900),
                               )
                             : Text(""),
                       ],
@@ -84,6 +86,7 @@ class PopulorProductView extends StatelessWidget {
                 onTap: () {},
                 child: Container(
                   width: 130,
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   decoration: BoxDecoration(
                       color: viewBackgroundColor,
                       borderRadius: BorderRadius.circular(product.imageRadius!),

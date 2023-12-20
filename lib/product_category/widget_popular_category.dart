@@ -16,31 +16,38 @@ class WidgetPopulorCategory extends StatelessWidget {
                 json.decode(snapshot.data.toString());
             Category category = Category.fromJson(jsonData["Category"]);
 
-            return Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  margin: const EdgeInsets.fromLTRB(15, 10, 15, 5),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Category",
-                        style: TextStyle(
-                            fontSize: 20, color: Colors.brown.shade900),
-                      ),
-                      category.allVisible!
-                          ? Text(
-                              "View All",
-                              style: TextStyle(
-                                  fontSize: 18, color: Colors.brown.shade900),
-                            )
-                          : Text(""),
-                    ],
+    Color containerBackgroundColor =
+        Util.getColorFromHex(category.containerBackgroundColor!);
+
+            return Container(
+                    color: containerBackgroundColor,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    color: containerBackgroundColor,
+                    margin: const EdgeInsets.fromLTRB(15, 10, 15, 5),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Category",
+                          style: TextStyle(
+                              fontSize: 20, color: Colors.brown.shade900),
+                        ),
+                        category.allVisible!
+                            ? Text(
+                                "View All",
+                                style: TextStyle(
+                                    fontSize: 14, color: Colors.brown.shade900),
+                              )
+                            : Text(""),
+                      ],
+                    ),
                   ),
-                ),
-                PopulorCategoryView(category),
-              ],
+                  PopulorCategoryView(category),
+                ],
+              ),
             );
           } else if (snapshot.hasError) {
             return Text('Error loading JSON'); // Handle error
@@ -67,7 +74,8 @@ class PopulorCategoryView extends StatelessWidget {
         Util.getColorFromHex(category.viewBackgroundColor!);
 
     return Container(
-        height: 140,
+        padding: EdgeInsets.fromLTRB(12, 0, 0, 12),
+        height: 170,
         child: ListView.builder(
             physics: ClampingScrollPhysics(),
             shrinkWrap: true,
@@ -78,33 +86,43 @@ class PopulorCategoryView extends StatelessWidget {
               return InkWell(
                 onTap: () {},
                 child: Container(
-                  color: viewBackgroundColor,
+                  width: 110,
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                  width: 100,
-                  child: Column(children: [
-                    Container(
-                      width: 70,
-                      height: 70,
-                      margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                      decoration: BoxDecoration(
-                        color: imageBackgroundColor,
-                        image: DecorationImage(
-                            image: NetworkImage(listItems[index].imageLink!),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.circular(category.imageRadius!),
+                   decoration: BoxDecoration(
+                      color: viewBackgroundColor,
+                      borderRadius: BorderRadius.circular(category.imageRadius!),
+                      border: Border.all(width: 1, color: Colors.blue)),
+                 
+                  
+                  margin: EdgeInsets.all(5),
+                  child: Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: Column(children: [
+                      Container(
+                        width: 70,
+                        height: 70,
+                        // margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                        
+                        decoration: BoxDecoration(
+                          color: imageBackgroundColor,
+                          image: DecorationImage(
+                              image: NetworkImage(listItems[index].imageLink!),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.circular(category.imageRadius!),
+                        ),
                       ),
-                    ),
-                    Container(
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
-                      child: Text("${listItems[index].titleText!}",
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 2,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: textColor, fontSize: category.fontSize!)),
-                    )
-                  ]),
+                      Container(
+                        alignment: Alignment.center,
+                        padding: EdgeInsets.fromLTRB(6, 5, 6, 5),
+                                child: Text("${listItems[index].titleText!}",
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 2,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: textColor, fontSize: category.fontSize!)),
+                      )
+                    ]),
+                  ),
                 ),
               );
             }));

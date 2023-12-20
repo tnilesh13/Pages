@@ -21,6 +21,7 @@ class HomeScreen extends StatelessWidget {
           // ),
           // WidgetImageSlider(),
           WidgetPopulorProduct(),
+          SizedBox(height: 10,),
           WidgetPopulorCategory()
         ],
       )

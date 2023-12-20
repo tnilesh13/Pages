@@ -1,10 +1,11 @@
 {
   "Product": {
-    "ImageBackgroundColor": "#c1c1c1",
+    "ImageBackgroundColor": "#d17171",
     "TextColor": "#000000",
     "FontSize": 20.0,
     "ImageRadius": 10.0,
-    "ViewBackgroundColor":"#bcbcbc",
+    "ViewBackgroundColor":"#757575",
+    "ContainerBackgroundColor":"#bcbcbc",
     "AllVisible": true,
     "LinkType": "Product",
     

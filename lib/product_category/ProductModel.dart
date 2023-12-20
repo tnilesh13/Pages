@@ -24,6 +24,7 @@ class Product {
   double? fontSize;
   double? imageRadius;
   String? viewBackgroundColor;
+  String? containerBackgroundColor;
   bool? allVisible;
   String? linkType;
   List<Items>? items;
@@ -34,6 +35,7 @@ class Product {
       this.fontSize,
       this.imageRadius,
       this.viewBackgroundColor,
+      this.containerBackgroundColor,
       this.allVisible,
       this.linkType,
       this.items});
@@ -44,6 +46,7 @@ class Product {
     fontSize = json['FontSize'];
     imageRadius = json['ImageRadius'];
     viewBackgroundColor = json['ViewBackgroundColor'];
+    containerBackgroundColor = json['ContainerBackgroundColor'];
     allVisible = json['AllVisible'];
     linkType = json['LinkType'];
     if (json['Items'] != null) {
@@ -61,6 +64,7 @@ class Product {
     data['FontSize'] = this.fontSize;
     data['ImageRadius'] = this.imageRadius;
     data['ViewBackgroundColor'] = this.viewBackgroundColor;
+    data['ContainerBackgroundColor'] = this.containerBackgroundColor;
     data['AllVisible'] = this.allVisible;
     data['LinkType'] = this.linkType;
     if (this.items != null) {
